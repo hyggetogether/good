@@ -4,6 +4,24 @@ body {
 
 .form,
 .greetings {
+  font-size: 40px;
+  margin: 30px;
+}
+
+.js-weather {
+  color: palegreen;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+}
+.js-clock {
+  text-align: center;
+  color: peachpuff;
+  font-size: 60px;
+  height: 200px;
+}
+.form,
+.greetings {
   display: none;
 }
 

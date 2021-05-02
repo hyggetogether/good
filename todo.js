@@ -32,6 +32,7 @@ function paintToDo(text) {
   const newId = toDos.length + 1;
   delBtn.innerHTML = "❌";
   delBtn.addEventListener("click", deleteToDo);
+
   span.innerText = text;
   li.appendChild(delBtn);
   li.appendChild(span);
@@ -43,7 +44,6 @@ function paintToDo(text) {
   };
   toDos.push(toDoObj);
   saveToDos();
-  //push 해주고 save해야함
 }
 
 function handleSudmit(event) {
@@ -60,7 +60,6 @@ function loadToDos() {
     parsedToDos.forEach(function (toDo) {
       paintToDo(toDo.text);
     });
-    //forEach는 array를 위한 함수?
   }
 }
 
